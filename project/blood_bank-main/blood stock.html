@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Stock Availability</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px grey;
+            margin: 20px 0;
+            width: 90%;
+            max-width: 600px;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blood Bank</h1>
+        <img  id="p"src="logo.png" alt="Donate blood" >
+        <p>Most people are able to give blood, but only 4% actually do.</p>
+        <p>Your Health, Our Priority</p>
+    </header>
+
+    <div class="container">
+        <h2>Blood Stock Availability</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Blood Type</th>
+                    <th>Units Available</th>
+                </tr>
+            </thead>
+            <tbody id="bloodStockTable">
+                <!-- Data will be populated here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Blood Bank. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Sample data for blood stock
+        const bloodStock = [
+            { type: 'A+', units: 10 },
+            { type: 'A-', units: 5 },
+            { type: 'B+', units: 15 },
+            { type: 'B-', units: 7 },
+            { type: 'AB+', units: 12 },
+            { type: 'AB-', units: 3 },
+            { type: 'O+', units: 20 },
+            { type: 'O-', units: 8 }
+        ];
+
+        const bloodStockTable = document.getElementById('bloodStockTable');
+
+        // Populate the table with blood stock data
+        bloodStock.forEach(stock => {
+            const row = document.createElement('tr');
+            const typeCell = document.createElement('td');
+            const unitsCell = document.createElement('td');
+
+            typeCell.textContent = stock.type;
+            unitsCell.textContent = stock.units;
+
+            row.appendChild(typeCell);
+            row.appendChild(unitsCell);
+            bloodStockTable.appendChild(row);
+        });
+    </script>
+</body>
+</html>

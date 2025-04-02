@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor Eligibility Checker</title>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+    }
+    
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 20px 20px 20px gray;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin-bottom: 10px;
+    }
+    
+    input {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        background-color: #d32f2f;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .result {
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+    
+    <script>
+        function checkEligibility() {
+            const age = parseInt(document.getElementById('age').value);
+            const weight = parseInt(document.getElementById('weight').value);
+
+            if (age >= 18 && weight >= 50) {
+                document.getElementById('eligibility').textContent = 'You are eligible for Blood Donar';
+            } else if(age<0) {
+                document.getElementById('eligibility').textContent = 'You Entered worng age!!!!!!!  ';
+            }
+            else{
+                document.getElementById('eligibility').textContent = 'You are  not eligible for Blood Donar';
+            }
+
+            return false; // Prevent form submission
+        }
+    </script>
+</head>
+<body>
+    <br><br>
+    
+    <div class="container">
+        <h1>Check Your Eligibility for Blood Donation</h1>
+        <form onsubmit="return checkEligibility()">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="weight">Weight (in kg):</label>
+            <input type="number" id="weight" name="weight" required>
+
+            <button type="submit">Check Eligibility</button>
+        </form>
+        <p class="result"><span id="eligibility"></span> </p>
+    </div>
+</body>
+</html>

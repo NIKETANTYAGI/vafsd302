@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Section</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 10px 10px  gray;
+}
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+        .question {
+            background-color: #f1f1f1;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+    <div class="faq-item">
+        <div class="question">How do i schedule an online consultation with  a doctor </div>
+        <div class="answer">You can schedule an online consultation with a doctor by downloading and signing up for the Edocconsult app.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">How do i pay for an online consultation ?</div>
+        <div class="answer">Payments for the consultation can be made online.</div>
+    </div>
+    <div class="faq-item">
+        <div class="question">Do you offer customer support?</div>
+        <div class="answer">Yes, we offer 24/7 customer support via email and chat.</div>
+    </div>
+    <div class="faq-item">
+        <div class ="question">How long does an online consultation last ?</div>
+        <div class="answer">The duration of an online consultation may vary according to your symptoms.</div>
+    </div>
+    <div class="faq-item"></div>
+        <div class ="question">How do i know if the doctor i am consulting is Qualified or not ?</div>
+        <div class="answer">We have  MD-level doctors. Hence, ensuring you have access to qualified medical professionals.</div>
+    </div>
+    
+</div>
+
+<script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        });
+    });
+</script>
+
+</body>
+</html>

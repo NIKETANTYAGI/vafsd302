@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .text-center
+        {
+            text-align:center
+        }
+        .box
+        {
+            text-align: center;
+            box-shadow: 4px 2px 2px 2px rgb(173, 71, 71);
+            height: 250px;
+            border-radius: 6px;
+            
+        }
+    
+        .box2
+        {
+            border-top: 10px;
+    
+        }
+        .login{
+            font-size:20px;
+            background-color: rgb(122, 122, 206);
+            box-shadow: 4px 4px 2px 1px rgb(128, 128, 128);
+            font-weight: 800;
+            border-radius: 4px;
+        }
+        .text:hover{
+            font-size: larger;
+            color: blue;
+
+        }
+        input:hover{
+            font-size: larger;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1 box2">
+    <div class="container mt-5"></div>
+        <h2 class="text-center">Member Login</h2>
+        <form id="login-form">
+            <div class="form-group box1 text">
+                <label class="text" for="email">Email:</label>
+                <input  type="E-mail" class="form-control box1" id="email" placeholder="E-mail or username " required>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="text" for="password">Password:</label>
+                <input type="password" class="form-control box1" id="password" placeholder="password" required>
+            </div><br>
+            <button type="submit" class="login">Login</button>
+           
+        </form>
+
+    </div></div>
+</body>
+</html>

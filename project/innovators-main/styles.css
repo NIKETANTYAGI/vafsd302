@@ -1,0 +1,300 @@
+body{
+    margin: 0px;
+}
+header {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky; /* Makes the header sticky */
+    top: 0; /* Sticks the header to the top */
+    z-index: 1000; /* Ensures it stays above other content */
+    margin: 0px;
+    height: 220px;
+   
+}
+
+.logo {
+    width: 100px; /* Set the desired width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between logo and title */
+}
+
+
+.logo {
+    width: 200px; /* Set the desired width for the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+    border-radius: 100px 50px; /* Space between logo and title */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0px; /* Remove default margin */
+    display: flex; /* Add this line */
+    justify-content: space-between; /* Add this line */
+    width: 100%; /* Add this line to make the ul element take up the full width */
+}
+
+nav ul li {
+    display: inline-block; /* Allows dropdown to work */
+    position: relative; /* Needed for dropdown positioning */
+   text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Added padding for better clickable area */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition effect for link color and background */
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown {
+    display: inline-block; /* Display dropdown inline */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position it below the dropdown button */
+    background-color: rgb(255, 252, 252); /* Dropdown background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    z-index: 1; /* Keep it above other elements */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: #007bff; /* Dropdown link color */
+    padding: 10px 15px; /* Padding for dropdown links */
+    text-decoration: none; /* No underline */
+    display: block; /* Each link takes a full line */
+    transition: background-color 0.3s ease; /* Transition for background on hover */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue background on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for box shadow and scaling */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+h2 {
+    color: #343a40; /* Darker header color */
+}
+
+p {
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and scaling */
+    margin-right: 10px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transition for footer background */
+}
+
+footer:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; /* Added padding for better clickable area */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition effect for link color and background */
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Change color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Light background on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.dropdown {
+    display: inline-block; /* Display dropdown inline */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position it below the dropdown button */
+    background-color: white; /* Dropdown background color */
+    box-shadow: 10px 10px 10px gray /* Shadow for dropdown */
+    z-index: 1; /* Keep it above other elements */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content a {
+    color: #007bff; /* Dropdown link color */
+    padding: 10px 15px; /* Padding for dropdown links */
+    text-decoration: none; /* No underline */
+    display: block; /* Each link takes a full line */
+    transition: background-color 0.3s ease; /* Transition for background on hover */
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(202, 229, 239, 0.1); /* Light blue background on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: rgb(165, 213, 224);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for box shadow and scaling */
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+h2 {
+    color: #343a40; /* Darker header color */
+}
+
+p {
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for background and scaling */
+    margin-right: 10px; /* Space between buttons */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Transition for footer background */
+}
+
+footer:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+#logo1{
+    display: flex;
+    justify-content: space-around;
+    
+}
+h1{
+    margin-right: 300px;
+    font-weight: 900px;
+    font-size: 50px;
+}
+.nav {
+    height: 30px;
+    background-color: #343a40;
+    align-items: center;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    display: flex;
+    position: sticky;
+    text-align: center;
+    justify-content: space-between; /* Add this line */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #007bff;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    border-top: 1px solid #0056b3; /* Add a border to the top of the footer */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the footer */
+}
+
+footer:hover {
+    background: #0056b3; /* Change the background color on hover */
+}
+
+footer p {
+    font-size: 16px; /* Increase the font size of the text */
+    margin-bottom: 10px; /* Add some space between the text and the copyright information */
+}
+
+footer a {
+    color: #ffdd57; /* Change the color of the link */
+    text-decoration: none; /* Remove the underline from the link */
+}
+
+footer a:hover {
+    color: #ffffff; /* Change the color of the link on hover */
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script src="index.js"></script>
+    <div class="container mt-5">
+        <h1 class="text-center">Appointment</h1>
+        <p class="text-center">Connecting Patient with hospitals.</p>
+        <div class="text-center">
+            <a href="/register" class="btn btn-primary">Register</a>
+            <a href="/login" class="btn btn-secondary">Login</a>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="text-center">Registration Form</h2>
+        <form id="register-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="xyz@gmail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" placeholder="password"required>
+            </div>
+            <div class="form-group">
+                <label for="bloodType">Blood Type:</label>
+                <select class="form-control" id="bloodType" required>
+                    <option value="" disabled selected>Select your blood type</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success" style="text-align:center">Register</button>
+        </form>
+    </div>
+   
+   
+    
+</body>
+</html>

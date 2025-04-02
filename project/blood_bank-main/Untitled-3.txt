@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <script>
+        let time=prompt("Enter The time");
+        if(time>=0 && time<12){
+            document.write("IT'S MORNING");
+        }
+        else if(time>=12 && time<16){
+            document.write("IT'S AFTERNOON");
+        }
+        else if(time>=16 && time<20){
+            document.write("IT'S EVENING");
+        }
+        else{
+            document.write("IT'S NIGHT");
+        }
+    </script>
+</body>
+</html>

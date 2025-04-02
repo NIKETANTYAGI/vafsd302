@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Doctor Consultation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo1"><img src="logo4.jpg"  alt="Online Doctor Consultation Logo" class="logo"> 
+            <h1>Online Doctor Consultation</h1>
+            </div>
+    </header>
+    <nav class="nav">
+        <ul>
+            <div class="nav-element">
+            <li><a href="#home">Home</a></li>
+            <li><a href="appoint.html">Book Appointment</a></li>
+            <li><a href="#consult-doctor">Consult a Doctor</a></li>
+            <li><a href="#prescriptions">Prescriptions</a></li>
+            <li><a href="userprofile.html">My Profile</a></li>
+            <li> <a href="contactus.html">Contact Us</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">More</a>
+                <div class="dropdown-content">
+                    <a href="aboutfile.html">About Us</a>
+                    <a href="faq.html">FAQ</a>
+                   
+                </div>
+            </div>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Our Online Consultation Platform</h2>
+            <p>At our platform, we provide an easy and secure way to consult with qualified doctors from the comfort of your home. Whether you need a routine checkup or have a specific concern, we are here to help.</p>
+            <p><strong>Why Choose Us?</strong></p>
+            <ul>
+                <li>24/7 Availability</li>
+                <li>Qualified and Experienced Doctors</li>
+                <li>Easy Appointment Booking</li>
+                <li>Secure Video and Chat Consultations</li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a dedicated team of healthcare professionals committed to providing high-quality medical consultations through a user-friendly online platform. Our goal is to enhance patient access to healthcare services while ensuring convenience and safety.</p>
+            <p>Our team consists of licensed doctors from various specialties, ready to assist you with your health concerns.</p>
+        </section>
+
+        <section id="book-appointment">
+            <h2>Book an Appointment</h2>
+            <form id="appointment-form">
+                <label for="doctor-name">Select Doctor:</label>
+                <select id="doctor-name" name="doctor-name">
+                    <option value="dr-smith">Dr. Abhishek (General Practitioner)</option>
+                    <option value="dr-jones">Dr. Ritesh (Pediatrician)</option>
+                    <option value="dr-brown">Dr. Satyam (Dermatologist)</option>
+                </select>
+                <label for="appointment-date">Choose Date:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+                <label for="appointment-time">Choose Time:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+            <div id="appointment-confirmation" class="hidden"></div>
+        </section>
+
+        <section id="consult-doctor">
+            <h2>Consult a Doctor</h2>
+            <p>Choose your preferred method of consultation:</p>
+            <button onclick="startChat()">Start Chat</button>
+            <button onclick="startVideoCall()" >Start Video Call</button>
+        </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <h3>1. How do I book an appointment?</h3>
+            <p>You can book an appointment by selecting the 'Book Appointment' tab from the navigation menu and filling out the required information.</p>
+            <h3>2. What types of consultations do you offer?</h3>
+            <p>We offer both text chat and video consultations with our qualified doctors.</p>
+            <h3>3. Can I get a prescription online?</h3>
+            <p>Yes, our doctors can provide prescriptions during your consultation if deemed necessary.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+            <ul>
+                <li>Email: support@doctorconsultation.com</li>
+                <li>Phone: 1-800-555-0199</li>
+                <li>Address: 123 Health St, Wellness City, HC 12345</li>
+            </ul>
+        </section>
+
+        <section id="prescriptions">
+            <h2>Your Prescriptions</h2>
+            <p>No prescriptions available. Please consult a doctor to get started.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Online Doctor Consultation Platform | <a href="#privacy-policy">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

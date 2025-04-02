@@ -1,0 +1,137 @@
+/* Customize your styles here */
+img{
+    width: 200px; height: 200px;
+    padding: 15px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    height:400px;
+    box-shadow:  20px 20px 20px gray;
+    border-radius: 20px 20px;
+}
+
+.a {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 10px 10px gray;
+    border-radius: 20px 20px;
+}
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+        border-radius: 20px 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width: 300px; height: 250px;
+  }
+  .tcenter{
+    display:block;
+  }
+.Registration{
+    background-color:blanchedalmond;
+    display: flex;
+    margin-left: 10rem;
+    box-shadow: 5px 5px #e5d4ef;
+    border-radius: 20px 20px;
+}
+h1{
+    font: 3em sans-serif;
+}
+.health{
+    background-color:#ffffea;
+    display: flex;
+    margin-left: 10rem;
+    box-shadow: 5px 5px #e5d4ef;
+    border-radius: 20px 20px;
+}
+.Health{
+    background-color: #f9f9f9;
+}
+.list{
+    font-size: 20px;
+}
+
+
+.donate{
+    background-color:blanchedalmond;
+    display: flex;
+    margin-left: 10rem;
+    box-shadow: 5px 5px #e5d4ef;
+    border-radius: 20px ;
+}
+#donation{
+    height: 400px;
+    width: 300px;
+}
+#re{
+    height: 200px;
+    width: 200px;
+}
+.refresh{
+    background-color:aliceblue;
+    display: flex;
+    margin-left: 10rem;
+    box-shadow: 5px 5px #e5d4ef;
+    border-radius: 20px;    
+}
+.tip{
+    margin-left: 200px;
+}
+.last{
+    display: flex;
+    margin-left: 150px;
+    }
+.b{
+    background-color:#caffbf;
+    box-shadow: 10px 10px #e5d4ef;
+    width: 300px;
+    margin-left: 350px;
+    border-radius: 20px 20px;
+}
+.le{
+    text-align: left;
+}
+#m{
+    width: 700px;
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donors</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+    }
+    
+    header {
+        background-color: red;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+        padding-bottom: 20px;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    
+    section {
+        margin: 2em auto;
+        padding:10px 10px 0 10px ;
+        max-width: 800px;
+        background-color: white;
+        box-shadow: 10px 10px 10px gray;
+        padding-bottom: 20px;
+    }
+    
+    h2 {
+        color: #c0392b;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    label {
+        margin: 0.5em 0 0.2em;
+    }
+    
+    input, select, button {
+        padding: 0.5em;
+        margin: 0.2em 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    button {
+        background-color: #c0392b;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #a0291d;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 1em 0;
+        background-color: #333;
+        color: white;
+    }
+    img {
+  border-radius: 50%;
+}
+h1{
+    font-weight:600 ;
+    font-style: italic;
+    color: greenyellow;
+
+}
+#home{
+    transform: translateY(-20px); /* Lifts the container upwards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#home:hover{
+    
+    transform: translateY(-30px); /* Lifts the container further when hovered */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+#about{
+    transform: translateY(-20px); /* Lifts the container upwards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#about:hover{
+    
+    transform: translateY(-30px); /* Lifts the container further when hovered */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}#donate{
+    transform: translateY(-20px); /* Lifts the container upwards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#donate:hover{
+    
+    transform: translateY(-30px); /* Lifts the container further when hovered */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+#contact{
+    transform: translateY(-20px); /* Lifts the container upwards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#contact:hover{
+
+    transform: translateY(-30px); /* Lifts the container further when hovered */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+    </style>
+</head>
+<body><!--// header section-->
+    <header>
+        <h1>Blood Donors</h1>
+        <img  id="p"src="logo.png" alt="Donate blood" >
+        <p>Most people are able to give blood, but only 4% actually do.</p>
+        <nav>
+            <ul>
+                <li><a href="soures.html">Home</a></li>
+                <li><a href="About us.html">About</a></li>
+                <li><a href="#donate">Donate</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header><!--//home section-->
+    <br><br><section id="home">
+        <h2>Welcome to Blood Donors</h2>
+        <p>Your contribution can save lives. Join our community of heroes.</p>
+    </section>
+    <!--//about section-->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to connecting donors with those in need. Learn more about our mission and how you can help.</p>
+    </section>
+    <!--donor section-->
+    <section id="donate">
+        <h2>Donate Blood</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="blood-type">Blood Type:</label>
+            <select id="blood-type" name="blood-type" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!--contact section-->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@blooddonors.com</p>
+        <p>Phone: +123-456-7890</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Blood Donors. All rights reserved.</p>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('donation-form');
+        const confirmationMessage = document.getElementById('confirmation-message');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            confirmationMessage.style.display = 'block';
+            form.reset();
+        });
+    });
+    </script>
+</body>
+</html>
